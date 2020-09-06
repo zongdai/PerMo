@@ -1,0 +1,19 @@
+
+
+# pose solve
+input_image_dir: '/home/beta/SG2020/kitti_3d/test_set/test_image/'
+stage1_network_res: '/home/beta/SG2020/DENSEPOSE2/detectron2/projects/DensePose/kitti_test.pkl'
+calib_dir: '/home/beta/SG2020/kitti_3d/test_set/calib/'
+temaplate_models_dir: '/home/beta/SG2020/kitti_3d/train_set/new_kitti_model/'
+simplification_temaplate_models_dir: '/home/beta/SG2020/kitti_3d/train_set/kitti_simplification_models/kitti_simplification_models/'
+texture_path: '/home/beta/SG2020/kitti_3d/train_set/new_kitti_model/Template18_new.PNG'
+
+skp_model_path: '/home/beta/SG2020/skp_rpn/skp_model.pth'
+est_depth_dir: '/home/beta/SG2020/kitti_3d/test_set/depth_img/'
+
+part_seg_output_dir: './res/part_seg/'
+uv_reg_output_dir: './res/uv/'
+re_render_ouput_dir: './res/re_render/'
+pos_res_output_dir: './res/pose_res/'
+rencon_output_dir: './res/reconstruction/'
+
