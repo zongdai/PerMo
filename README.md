@@ -1,10 +1,11 @@
 # PerMo
-
+[Paper](https://arxiv.org/abs/2007.08116)
+We present a novel approach to detect, segment, and reconstruct complete textured 3D models of vehicles from a single image for autonomous driving. Our approach combines the strengths of deep learning and the elegance of traditional techniques from part-based deformable model representation to produce high-quality 3D models in the presence of severe occlusions. We present a new part-based deformable vehicle model that is used for instance segmentation and automatically generate a dataset that contains dense correspondences between 2D images and 3D models. We also present a novel end-to-end deep neural network to predict dense 2D/3D mapping and highlight its benefits. Based on the dense mapping, we are able to compute precise 6-DoF poses and 3D reconstruction results at almost interactive rates on a commodity GPU. We have integrated these algorithms with an autonomous driving system. In practice, our method outperforms the state-of-the-art methods for all major vehicle parsing tasks: 2D instance segmentation by 4.4 points (mAP), 6-DoF pose estimation by 9.11 points, and 3D detection by 1.37. Moreover, we have released all of the source code, dataset, and the trained model on Github.
 ## Network & 3D reconstruction
 ### Requirements
 * Python ≥ 3.6, PyTorch ≥ 1.4
 * opencv, tqdm
-* [detectron2](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md)
+* [detectron2=0.1.1](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md)
 
 ### Usage
 Step 1. Get the part segmentation, uv regression using our [pre-trained model](https://drive.google.com/file/d/1qsuVn1J4E3XJhrj9ijfjgm_1H1TToaM2/view?usp=sharing).
